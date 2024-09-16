@@ -26,7 +26,7 @@ int main()
 	amtB = oneB * cookies;
 	amtF = oneF * cookies;
 
-	cout << "\nin order to make " << cookies << " cookies, you would need\n\n\n"
+	cout << "\nin order to make " <<fixed << setprecision(2) << cookies << " cookies, you would need\n\n\n"
 		<< left << fixed << showpoint << setprecision(2) << setw(8) << amtS << " cups of sugar\n"
 		<< setw(8) << amtB << " cups of butter\n"
 		<< setw(8) << amtF << " cups of flour\n";
