@@ -2,10 +2,40 @@
 //
 
 #include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+
+
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    double principal, rate, compound, total, interest;
+
+    cout << "what is your current principal (account balance)?\n";
+    cin >> principal;
+
+    cout << "\nwhat is your current interest rate as a decimal?\n";
+    cin >> rate;
+
+    cout << "\nhow many times is your interest compounded over 12 months?\n"; 
+    cin >> compound;
+
+    total = principal * pow((1 + rate / compound), compound);
+
+    interest = total - principal;
+
+    cout << "\nyour total amount of interest earned is " << fixed << showpoint << setprecision(2) << interest
+        << " and your total balance with interest is " << total << endl;
+
+
+
+
+
+    return 0;
+
+  
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
