@@ -2,10 +2,34 @@
 //
 
 #include <iostream>
-
+#include <iomanip>
+#include <cmath>
+using namespace std;
 int main()
 {
-    std::cout << "Hello World!\n";
+    double num1, num2, answer;
+    char ch;
+    
+    //user creates their own numbers because i don't know how to create random numbers yet
+    cout << "enter a random number\n";
+    cin >> num1;
+    
+    cout << "\nenter another random number\n";
+    cin >> num2;
+    
+    answer = num1 + num2;
+    
+    cout <<'\n' << num1 << " + " << num2 << " = \n\n";
+    
+    
+    cout << "please do the math and when you are ready press enter to see the answer\n\n";
+    cin.ignore(20, '\n');
+    cin.get(ch);
+    
+     
+    cout << "the answer is " << answer;
+
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
